@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="ext">
+<head>
+  <link href="styles/bttn.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+  <title>Bookmarker</title>
+</head>
+<body>
+  <div class="center">
+    <h1>Import</h1>
+    <p><small>Importing bookmarks is a little tricky, to keep things simple, I am currently only supporting the chrome standard layout for bookmarks. (List of folders with bookmarks inside of them).</small></p>
+    <p class="instruction">Clicking the button below will find the bookmarks in folders (<span class="italics">Bookmarks Bar, Mobile etc</span>) and try to import them.</p>
+    <button class="bttn bttn-primary importChrome">Import from Chrome</button>
+    <div class="results none">
+    </div>
+    <ol class="results-list">
+
+    </ol>
+    <button class="importbttn bttn bttn-success none">Import Above Bookmarks</button>
+    <p class="none success italics">Success!</p>
+    <p class="none error italics">Error!</p>
+  </div>
+</div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/import.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "name": "Easy for bookmark",
+  "version": "0.1.5.1",
+  "manifest_version": 2,
+  "description": "Desgine for only me",
+  "icons": {
+    "19": "images/icon-19.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "bookmarks"
+  ],
+  "default_locale": "en",
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "Easy for bookmark",
+    "default_popup": "popup.html"
+  },
+  "chrome_url_overrides" : {
+    "newtab" : "newtab.html"
+  },
+  "web_accessible_resources": [
+    "images/*",
+    "data/*.json"
+  ],
+"commands": {
+    "Open All": {
+      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "description": "Open Bookmarks in the background"
+    },
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "MacCtrl+Shift+X"
+      }
+    }
+  }
+}

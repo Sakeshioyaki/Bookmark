@@ -1,0 +1,43 @@
+:root {
+
+  --text-color: black;
+  --text-bar-color: #303030;
+  --color-body:#5f6a6b;
+  --color-top-nav-hover:gray;
+  /*--color-top-nav:;*/
+}
+body {
+	background: var(--color-body);
+
+}
+.header {
+	color: var(--text-color);
+  background-color: var(--color-body);
+}
+.topnav {
+	background-color: var(--text-color);
+}
+.topnav a:hover {
+  background-color:var(--color-top-nav-hover) ;
+  color: var(--text-bar-color);
+}
+.card {
+	background-color: var(--text-bar-color);
+  color: white;
+  
+
+}
+.chat{
+  color: var(--text-color);
+}
+.footer{
+  background-color: var(--text-bar-color);
+    color: var(--text-color);
+}
+.btn{
+  background-color: var(--text-bar-color);
+    color: var(--text-color);
+}
+.btn:hover {
+  background-color: black;
+}
